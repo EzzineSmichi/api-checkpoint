@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { apiCall } from '../redux/user/action'
 import User from './User'
+import { Alert } from 'reactstrap'
+import SelektonComponent from './SelektonComponent'
 
 const UserList = () => {
 
@@ -19,7 +21,8 @@ const UserList = () => {
         <div className='container'>
             {
                 state.isLoading ? (
-                    <h1 style={{textAlign:'center', color:'red'}}>Loading...</h1>
+                    // <h1 style={{textAlign:'center', color:'red'}}>Loading...</h1>
+                    <SelektonComponent /> 
                 )
                 :state.error ? (
                     <Alert color='danger'>{state.error}</Alert>

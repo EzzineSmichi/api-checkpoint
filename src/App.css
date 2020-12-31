@@ -32,6 +32,12 @@
   padding-top: 2rem;
 }
 
+.load {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 2rem;
+}
+
 .card {
   margin: 1rem;
 }
